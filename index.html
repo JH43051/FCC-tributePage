@@ -4,16 +4,25 @@
   <meta charset="utf-8">
   <title>Tribute Page | Responsive Web Design Projects</title>
   <style>
+    @font-face {
+      font-family: "Lato";
+      src: local("Lato Regular"), local("Lato-Regular"),
+        url("https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+    }
     body {
-      background-color: #e0e0e0;
-      font-family: sans-serif;
+      background-color: #ffffff;
+      font-family: 'Lato Regular', Arial, sans-serif;
     }
 
     header {
       text-align: center;
-      background-color: #b3cbe2;
-      text-transform: uppercase;
+      background-color: #edf6f5;
       padding: 10px;
+      margin-top: 30px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
     }
 
     #img-div {
@@ -22,29 +31,30 @@
     }
 
     #image {
-      max-width: 50%;
       display: block;
       height: auto;
       margin: auto;
+      margin-top: 60px;
+      border-radius: 5px;
     }
 
     figcaption {
-      margin-top: 10px;
-      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 60px;
     }
 
     #tribute-info {
       padding: 10px;
-      background-color: #b3cbe2;
-      font-size: 115%;
+      background-color: #edf6f5;
     }
 
-    #tribute-info h2 {
+    #tribute-info h3 {
       text-align: center;
     }
 
     #tribute-info ul {
       padding: 10px 10px 10px 10%;
+      margin: 0% 20% 0% 30%;
     }
 
     li {
@@ -54,9 +64,13 @@
 
     footer {
       text-align: center;
-      background-color: #bfbfbf;
+      background-color: #edf6f5;
       padding: 10px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      margin-bottom: 30px;
     }
+
   </style>
   <!-- <script src="testing.js"></script> -->
 </head>
@@ -64,38 +78,48 @@
 <body>
   <main id="main">
     <header>
-      <h1 id="title">Charles Martel</h1>
-      <h3>Father of the European Middle Ages</h3>
+      <h1 id="title">J.R.R. Tolkien</h1>
+      <p>The father of modern fantasy literature</p>
     </header>
 
     <div id="img-div">
       <figure>
-        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Steuben_-_Bataille_de_Poitiers.png"
+        <img id="image" src="http://static-cms.legacy.com/sites/default/files/styles/hero_detail/public/tolkien-1600x500_0.jpg"
           alt="The Battle of Tours">
         <figcaption id="img-caption">
-          Charles Martel's army engages with Umayyads at the battle of Tours, France - 732 AD.
+          Tolkien engaged in a lecture at Merton College, Oxford, where he taught English Language until his retirement.
         </figcaption>
       </figure>
     </div>
 
     <div id="tribute-info">
-      <h2>Notable events in Martel's life:</h2>
+      <h3>Here's a timeline of Tolkien's life:</h3>
       <br>
       <ul>
-        <li><strong>688 AD. - </strong>Born to Pepin of Herstal (modern day Belgium) and wife Alpaida.</li>
-        <li><strong>714 AD. - </strong>Father Pepin dies, igniting a civil war for the throne in France.</li>
-        <li><strong>715 AD. - </strong>Charles escapes prison and is given the title "Mayor of the Palace" of Austrasia (eastern France).</li>
-        <li><strong>717 AD. - </strong>Invades the kingdom Neustria (central France) and is victorious at the battle of Vincy.</li>
-        <li><strong>718 AD. - </strong>Defeats the Saxons at the battle of the Teutoborg Forest; Charles spends several years subjugating various germanic tribes and consolidating his territory in France.</li>
-        <li><strong>721 AD. - </strong>The Emir of Cordoba (modern Spain) gathers a large north-African army and attacks Aquitaine (France).</li>
-        <li><strong>732 AD. - </strong>Martel's Frankish army defeats a vastly superior muslim army of Umayyads at the battle of Tours, saving France from further invasion.</li>
-        <li><strong>737 AD. - </strong>Is crowned "King of the Franks" (modern French).</li>
-        <li><strong>741 AD. - </strong>Dies.</li>
+        <li><strong>1892 - </strong>Born in South Africa to Arthur and Mabel Tolkien.</li>
+        <li><strong>1902 - </strong>By the age of four, Tolkien could write fluently.</li>
+        <li><strong>1911 - </strong>Goes on a treck in Switzerland as a youth, inspiring the later journey of Bilbo in "The Hobbit".</li>
+        <li><strong>1913 - </strong>Tolkien, a Catholic, marries Edith Bratt, a Protestant, causing conflict with both families.</li>
+        <li><strong>1920 - </strong>Comes home to England from the first world war and becomes the youngest professor at the University of Leeds teaching English Language.</li>
+        <li><strong>1925 - </strong>Moves to Oxford as a fellow at Pembroke College after completing the definitive translation of the classic "Sir Gawain and the Green Knight".</li>
+        <li><strong>1926 - </strong>Translates the Anglo-Saxon tale "Beowulf".</li>
+        <li><strong>1926-35 - </strong>Completes several beloved "Middle Earth" works such as "The Hobbit" and the first two books of "The Lord of the Rings".</li>
+        <li><strong>1936-38 - </strong>Expands the mythology of "Middle Earth" (based largely on the pre-Christian germanic folk religion) through works such as "The Silmarillion".</li>
+        <li><strong>1939 - </strong>Serves in the second world war as a cyptography officer, or "code breaker".</li>
+        <li><strong>1945 - </strong>Finally finishes the "Lord of the Rings" trilogy by completing "The Return of the King", changing the course of fantasy literature forever.</li>
+        <li><strong>1959 - </strong>Retires and enjoys increasing literary fame up until his death.</li>
+        <li><strong>1971 - </strong>Dies at the age of 82.</li>
       </ul>
     </div>
 
     <footer>
-      <p>Click here to learn more about <a id="tribute-link" href="https://en.wikipedia.org/wiki/Charles_Martel" target="_blank">Charles Martel</a>
+      <p><i><q>All that is gold does not glitter, not all those who wander are lost;
+        the old that is strong does not wither, deep roots are not reached by the frost.</q></i>
+        - John Ronald Reuel Tolkien
+      </p>
+      <h3>If you have time, you should read more about this incredible human being on his
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Charles_Martel" target="_blank">Wikipedia Entry.</h3>
+      </p>
     </footer>
   </main>
 </body>
